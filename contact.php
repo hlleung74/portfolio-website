@@ -14,7 +14,7 @@ if (isset($_POST['submit'])) {
 	$txt .= $name;
 
 	mail($mailTo, $subject, $txt, $mailheader) or die("Error!");
-	header('Location: ../');
+	header('Location: index.html?mailsend');
 }
 
 ?>
