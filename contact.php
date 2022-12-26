@@ -1,16 +1,16 @@
 <?php
 
 $name = $_POST['name'];
-$email = $_POST['email'];
+$mailFrom = $_POST['email'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
 
-$mailheader = "From:".$name."<".$email."<".$phone.">\r\n";
-
-$recipient = "hl.kessieleung@gmail.com";
+$mailTo = "hl.kessieleung@gmail.com";
+$mailheader = "From:""<".$mailFrom;
 $subject = "Message from Contact Form";
+$txt = "You have received an email from " .$name. ".\n\n" .$phone. ".\n\n" .$message;
 
-mail($recipient, $subject, $message, $mailheader) or die("Error!");
+mail($mailTo, $subject, $message, $mailheader) or die("Error!");
 
 
 ?>
