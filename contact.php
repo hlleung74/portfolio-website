@@ -1,20 +1,20 @@
 <?php
 
 if (isset($_POST['submit'])) {
-	$name = $_POST['name'];
-	$mailFrom = $_POST['email'];
-	$phone = $_POST['phone'];
-	$message = $_POST['message'];
+	$email = $_POST["email"];
+$to = "hl.kessieleung@gmail.com";
+$subject = "New Email Address for Mailing List";
+$headers = "From: $email\n";
+$message = "A visitor to your site has sent the following email address to be added to your mailing list.\n
 
-	$mailTo = "hl.kessieleung@gmail.com";
-	$mailheader = "From:"
-	$mailheader .= $mailFrom;
-	$subject = "Message from Contact Form";
-	$txt = "You have received an email from ";
-	$txt .= $name;
-
-	mail($mailTo, $subject, $txt, $mailheader) or die("Error!");
-	header('Location: index.html?mailsend');
+Email Address: $email";
+$user = "$email";
+$usersubject = "Thank You";
+$userheaders = "From: you@youremailaddress.com\n";
+$usermessage = "Thank you for subscribing to our mailing list.";
+mail($to,$subject,$message,$headers);
+mail($user,$usersubject,$usermessage,$userheaders);
 }
+
 
 ?>
