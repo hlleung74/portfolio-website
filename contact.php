@@ -11,6 +11,6 @@ $subject = "Message from Contact Form";
 $txt = "You have received an email from " .$name. ".\n\n" .$phone. ".\n\n" .$message;
 
 mail($mailTo, $subject, $message, $mailheader) or die("Error!");
-
+header('Location: ../');
 
 ?>
