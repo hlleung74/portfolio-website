@@ -53,7 +53,6 @@
     fetch('../../../contact.php', {
       method: 'POST',
       body: formData,
-      headers: {'X-Requested-With': 'XMLHttpRequest'}
     })
     .then(response => {
       return response.text();
