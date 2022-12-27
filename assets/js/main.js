@@ -251,5 +251,4 @@ document.addEventListener('DOMContentLoaded', () => {
     aos_init();
   });
 
-
 });
