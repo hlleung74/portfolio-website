@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
    * Change navigation style when scroll
    */
   const header = document.querySelector(".header");
-  const sectionOne = document.querySelector(".carousel");
+  const sectionOne = document.querySelector(".get-started");
 
   const sectionOneOptions = {
     rootMargin: "-200px 0px 0px 0px"
