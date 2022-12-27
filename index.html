@@ -312,26 +312,16 @@
               <form action="contact.php" method="post">
               <h3>Let's Talk!</h3>
               <p>Don't hesitate to get in touch, even if it's just to say hello. I'm always happy to help.</p>
-              <p><label for="first">First Name *</label><br>
-<input maxlength="50" name="first_name" id="first" size="30" type="text" required placeholder="First Name"  /></p>
-   
-<p><label for="last">Last Name *</label><br>
-<input maxlength="50" name="last_name"  id="last" size="30" type="text" required  placeholder="Last Name" /></p>
-  
-  
-<p><label for="phone">Telephone *</label><br>
-<input maxlength="30" name="telephone" id="phone" size="30" type="text" required  placeholder="&#215;&#215;&#215;-&#215;&#215;&#215;-&#215;&#215;&#215;&#215;" /></p>
-  
-  
-<p><label for="emailadr">Email *</label><br>
-<input maxlength="80" name="email" id="emailadr" size="30" type="email"required  placeholder="you@example.com" /></p>
-  
-
-<p><label for="msg">Message *</label><br>
-<textarea cols="25" maxlength="1000" id="msg" name="comments" rows="6" required placeholder="Tell us more..." ></textarea></p>
- 
-<small>* Required</small>
-<p><input type="submit" value="Send Message" /></p>
+              <label for="name">Name</label>
+      <input type="text" placeholder="Name" name="name"/>
+      <label for="email">Email Address</label>
+      <input type="text" placeholder="Email Address" name="emailAddress"/>
+      <label for="subject">Subject</label>
+      <input type="text" placeholder="Subject" name="subject"/>
+      <label for="message">Message</label>
+      <textarea placeholder="Message" name="message"></textarea>
+      <label for="submit">Submit Form</label>
+      <button class="submit-button" name="submit" type="submit">Submit</button>
             </form>
             </div>
           </div>
