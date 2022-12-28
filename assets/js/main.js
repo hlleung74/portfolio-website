@@ -101,8 +101,13 @@ document.addEventListener('DOMContentLoaded', () => {
     entries.forEach(entry => {
       if (!entry.isIntersecting) {
         header.classList.add("nav-scrolled");
+        document.getElementById("logoImg").src="assets/img/logos/logo-dark_without-bg.png";
+        document.getElementById("brand-name").style="color: #35455D";
+
       } else {
         header.classList.remove("nav-scrolled");
+        document.getElementById("logoImg").src="assets/img/logos/logo-light_without-bg.png";
+        document.getElementById("brand-name").style="color: #f4f4f4";
       }
     });
   },
@@ -145,36 +150,85 @@ document.addEventListener('DOMContentLoaded', () => {
   let portfolionIsotope = document.querySelector('.portfolio-isotope');
 
   if (portfolionIsotope) {
+    jQuery(document).ready(function($){
 
-    let portfolioFilter = portfolionIsotope.getAttribute('data-portfolio-filter') ? portfolionIsotope.getAttribute('data-portfolio-filter') : '*';
-    let portfolioLayout = portfolionIsotope.getAttribute('data-portfolio-layout') ? portfolionIsotope.getAttribute('data-portfolio-layout') : 'masonry';
-    let portfolioSort = portfolionIsotope.getAttribute('data-portfolio-sort') ? portfolionIsotope.getAttribute('data-portfolio-sort') : 'original-order';
-
-    window.addEventListener('load', () => {
-      let portfolioIsotope = new Isotope(document.querySelector('.portfolio-container'), {
+      let portfolioFilter = portfolionIsotope.getAttribute('data-portfolio-filter') ? portfolionIsotope.getAttribute('data-portfolio-filter') : '*';
+      let portfolioLayout = portfolionIsotope.getAttribute('data-portfolio-layout') ? portfolionIsotope.getAttribute('data-portfolio-layout') : 'masonry';
+      let portfolioSort = portfolionIsotope.getAttribute('data-portfolio-sort') ? portfolionIsotope.getAttribute('data-portfolio-sort') : 'original-order';
+      
+      var $container = $('.portfolio-container');
+      $container.isotope({
         itemSelector: '.portfolio-item',
         layoutMode: portfolioLayout,
         filter: portfolioFilter,
-        sortBy: portfolioSort
+        sortBy: portfolioSort,
       });
 
-      let menuFilters = document.querySelectorAll('.portfolio-isotope .portfolio-flters li');
-      menuFilters.forEach(function(el) {
-        el.addEventListener('click', function() {
-          document.querySelector('.portfolio-isotope .portfolio-flters .filter-active').classList.remove('filter-active');
-          this.classList.add('filter-active');
-          portfolioIsotope.arrange({
-            filter: this.getAttribute('data-filter')
-          });
-          if (typeof aos_init === 'function') {
-            aos_init();
-          }
-        }, false);
-      });
+      $('.portfolio-flters li').click(function(){
+        $('.portfolio-flters .filter-active').removeClass('filter-active');
+        $(this).addClass('filter-active');
+           
+        var selector = $(this).attr('data-filter');
+        $container.isotope({
+          filter: selector,
+          sortBy: portfolioSort,
+        });
+        return false;
+      }); 
 
+      /* Load More */
+      var initShow = 3; //number of images loaded on init & onclick load more button
+      var counter = initShow; //counter for load more button
+      var iso = $container.data('isotope'); // get Isotope instance
+      //console.log(iso.elemCount);
+             
+      loadMore(initShow); //execute function onload
+           
+      function loadMore(toShow) {
+                
+        $container.find(".hidden").removeClass("hidden");
+                
+        var hiddenElems = iso.filteredItems.slice(toShow, iso.filteredItems.length).map(function(item) {
+          //console.log(item.element);
+          return item.element;
+        });
+        $(hiddenElems).addClass('hidden');
+        $container.isotope('layout');
+                
+        //when no more to load, hide show more button
+        if (hiddenElems.length == 0) {
+          $("#load-more").hide();
+        } 
+        else {
+          $("#load-more").show();
+        };
+
+      }
+
+      /* append load more button */
+      $container.after('<div class="viewWorks"><a href="#" id="load-more">Load More</a></div>');
+            
+      //when load more button clicked
+      $(document).on("click", "#load-more", function(e) {
+        e.preventDefault();
+                
+        if ($('#filters').data('clicked')) {
+          //when filter button clicked, set initial value for counter
+          counter = initShow;
+          j$('#filters').data('clicked', false);
+        } else {
+          counter = counter;
+        };
+                
+        counter = counter + initShow;
+                
+        loadMore(counter);
+      });
     });
-
   }
+
+  
+  
 
   /**
    * Init swiper slider with 1 slide at once in desktop view
@@ -250,5 +304,42 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     aos_init();
   });
+
+  /**
+   * Hero Header Resize
+   */
+  $.fn.resizeText=function () {
+  var el=this;
+  if (el.length>1) return el.each(function () {
+    $(this).resizeText();
+  });
+
+var resizeText=function () {
+  console.log(el.attr("class"));
+    var fontsize=parseInt(el.css("font-size"));
+    var width=el.width();
+    var rentwidth=el.parent().width();
+  console.log(width, rentwidth, fontsize);
+    if (width<rentwidth){
+    while (width<rentwidth) {
+    el.css("font-size",fontsize++);
+    width=el.width();
+    }
+    el.css("font-size",fontsize--);
+    return;
+    }
+    while (width>rentwidth) {
+    el.css("font-size",fontsize--);
+    width=el.width();
+    }
+    return;
+    }
+resizeText();
+$(window).on("resize",resizeText);
+;
+};
+$(".hero-header").resizeText();
+ 
+
 
 });

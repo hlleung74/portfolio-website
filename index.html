@@ -10,8 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/logos/favicon.png" rel="icon">
+  <link href="assets/img/logos/favicon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,8 +39,8 @@
 
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>Kessie Leung<span>.</span></h1>
+        <img id = "logoImg" src="assets/img/logos/logo-light_without-bg.png" alt="">
+        <h1 id="brand-name">Kessie Leung</h1>
       </a>
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -60,21 +60,20 @@
   <!-- ======= Hero Section ======= -->
   <section id="home" class="hero">
 
-    <div class="info d-flex align-items-center">
+    <div class="info d-flex align-items-start">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-lg-6 text-center">
-            <h2 data-aos="fade-down">Hi, I am <span>Kessie</span></h2>
-            <p data-aos="fade-up">Content Writer, Video Editor.
-            I am a Creative Media postgraduate student with a passion for media cultures and motivation to learn new technologies and knowledge related to digital media. As a versatile team player, I am always ready to accept new challenges and adapt to different work cultures.</p>
-            <a data-aos="fade-up" data-aos-delay="200" href="#works" class="btn-projects">View Works</a>
+          <div class="col-lg-6 hero-container">
+            <h2 data-aos="fade-down" class="hero-header">BLAH BLAH</h2>
+            <p data-aos="fade-up">Blah Blah Blah. Blah Blah Blah.</p>
+            <a data-aos="fade-up" data-aos-delay="200" href="#works" class="btn-projects">Learn More</a>
           </div>
         </div>
       </div>
     </div>
 
     <div id="hero-carousel" class="carousel slide get-started" data-bs-ride="carousel" data-bs-interval="5000">
-      <div class="carousel-item active" style="background-image: url(assets/img/hero-carousel/hero-carousel-1.jpg)"></div>
+      <div class="carousel-item active" style="background-image: url()"></div>
     </div>
 
   </section><!-- End Hero Section -->
@@ -90,7 +89,7 @@
           <p>I have worked on numerous projects, from writing blog posts to editing videos. I am delighted to share my proudest works with you. Feel free to click the following images to learn more about the specific works you are interested in.</p>
         </div>
 
-        <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order">
+        <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="fitRows" data-portfolio-sort="original-order">
 
           <ul class="portfolio-flters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">All</li>
@@ -166,22 +165,22 @@
             </div><!-- End Projects Item -->
 
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-researchWriting">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-blogWriting">
               <div class="post-item position-relative h-100">
                 <div class="post-img position-relative overflow-hidden">
-                  <img src="assets/img/thumbnails/The_Uncanny_Valley.jpeg" class="img-fluid" alt="" />
-                  <span class="post-type">Research Essay</span>
+                  <img src="assets/img/thumbnails/Yuck_Factor.jpeg" class="img-fluid" alt="" />
+                  <span class="post-type">Blog Post</span>
                 </div>
 
                 <div class="post-content d-flex flex-column">
-                  <h3 class="post-title">The Uncanny Valley: Phenomenological Analysis on the Unintended Consequences Caused by the Designer Fallacy of Humanoid Robots</h3>
+                  <h3 class="post-title">@#$%&! The Internet is Yucky!</h3>
                   <div class="meta d-flex align-items-center">
                     <div class="d-flex align-items-center">
-                      <i class="bi bi-folder2"></i> <span class="ps-2">Research Writing</span>
+                      <i class="bi bi-folder2"></i> <span class="ps-2">Blog Writing</span>
                     </div>
                   </div>
                   <hr>
-                  <a target="_blank" href="Works/The_Uncanny_Valley.html" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+                  <a target="_blank" href="Works/The_Internet_is_Yucky.html" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
@@ -208,22 +207,22 @@
             </div><!-- End Projects Item -->
 
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-blogWriting">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-researchWriting">
               <div class="post-item position-relative h-100">
                 <div class="post-img position-relative overflow-hidden">
-                  <img src="assets/img/thumbnails/Yuck_Factor.jpeg" class="img-fluid" alt="" />
-                  <span class="post-type">Blog Post</span>
+                  <img src="assets/img/thumbnails/The_Uncanny_Valley.jpeg" class="img-fluid" alt="" />
+                  <span class="post-type">Research Essay</span>
                 </div>
 
                 <div class="post-content d-flex flex-column">
-                  <h3 class="post-title">@#$%&! The Internet is Yucky!</h3>
+                  <h3 class="post-title">The Uncanny Valley: Phenomenological Analysis on the Unintended Consequences Caused by the Designer Fallacy of Humanoid Robots</h3>
                   <div class="meta d-flex align-items-center">
                     <div class="d-flex align-items-center">
-                      <i class="bi bi-folder2"></i> <span class="ps-2">Blog Writing</span>
+                      <i class="bi bi-folder2"></i> <span class="ps-2">Research Writing</span>
                     </div>
                   </div>
                   <hr>
-                  <a target="_blank" href="Works/The_Internet_is_Yucky.html" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+                  <a target="_blank" href="Works/The_Uncanny_Valley.html" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
@@ -290,7 +289,7 @@
                 </div>
               </div>
             </div><!-- End Projects Item -->
-
+            
           </div><!-- End Projects Container -->
         </div>
       </div>
@@ -313,8 +312,6 @@
                 <h3>Let's Talk!</h3>
                 <p>Don't hesitate to get in touch, even if it's just to say hello. I'm always happy to help.</p>
 
-                <input type="hidden" name="_url" value="https://hlleung74.github.io/portfolio-website/">
-                <input type="hidden" name="_next" value="https://hlleung74.github.io/portfolio-website/thanks.html">
                 <input type="hidden" name="_subject" value="New Submission from Contact Form">
                 <input type="hidden" name="_autoresponse" value="Thank you for your message. I will response to you ASAP.">
                 <input type="hidden" name="_template" value="table">
@@ -323,14 +320,17 @@
                 <div class="col-md-12">
                   <input type="text" name="name" class="form-control" placeholder="Name" required>
                 </div>
-                <div class="col-md-12 ">
+                <div class="col-md-12">
                   <input type="email" class="form-control" name="email" placeholder="Email" required>
                 </div>
-                <div class="col-md-12 ">
+                <div class="col-md-12">
                   <input type="phone" class="form-control" name="phone" placeholder="Phone">
                 </div>
                 <div class="col-md-12">
                   <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                </div>
+                <div class="col-md-12">
+                  <input type="text" name="winnielove" style="display:none !important" tabindex="-1" autocomplete="off">
                 </div>
                 <div class="col-md-12 text-center">
                   <div class="loading">Loading</div>
@@ -343,14 +343,19 @@
             </div>
           </div>
 
-          <div class="col-lg-5" data-aos="fade">
-            <h3>Based in</h3>
-            <p>HKSAR, China</p>
+          <div class="col-lg-5 contact-info" data-aos="fade">
+            <div class="location">
+              <h3>Based in</h3>
+              <p>HKSAR, China</p>
+            </div>
+            <hr>
 
-            <h3>Social Media</h3>
+            <div class="social-media-links">
+              <h3>You can also find me at:</h3>
               <p>Linkedin</p>
+            </div>
             
-          </div><!-- End Quote Form -->
+          </div><!-- End Contact Form -->
 
         </div>
 
@@ -1066,12 +1071,14 @@
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/jquery/jquery-3.6.3.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- Template Main JS File -->
+  <!-- JS File -->
+  
   <script src="assets/js/main.js"></script>
 
 </body>

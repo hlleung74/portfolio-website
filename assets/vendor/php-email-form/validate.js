@@ -64,11 +64,6 @@
       thisForm.reset(); 
       
     })
-    /*
-    *.catch((error) => {
-    *  displayError(thisForm, error);
-    *});
-    */
   }
 
 
