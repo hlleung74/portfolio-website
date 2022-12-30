@@ -173,6 +173,9 @@ document.addEventListener('DOMContentLoaded', () => {
           filter: selector,
           sortBy: portfolioSort,
         });
+
+        loadMore(initShow);
+
         return false;
       }); 
 
