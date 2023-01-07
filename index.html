@@ -5,13 +5,13 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Kessie Leung - Media Cultures Enthusiast</title>
+  <title>Kessie Leung</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/logos/favicon.png" rel="icon">
-  <link href="assets/img/logos/favicon.png" rel="apple-touch-icon">
+  <link href="assets/img/logos/logo-dark_without-bg.png" rel="icon">
+  <link href="assets/img/logos/logo-dark_without-bg.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,23 +34,24 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="header d-flex align-items-center">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+  <header id="header" class="header">
+    <div class="header-container d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img id = "logoImg" src="assets/img/logos/logo-light_without-bg.png" alt="">
-        <h1 id="brand-name">Kessie Leung</h1>
-      </a>
+      <div class="logo d-flex align-items-center">
+        <a href="index.html">
+          <img id = "logoImg" src="assets/img/logos/logo-light_without-bg.png" alt="">
+          <h1 id="brand-name">Kessie L</h1>
+        </a>
+      </div>
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="#home" class="home active">Home</a></li>
-          <li><a href="#works" class="works">Works</a></li>
-          <li><a href="" class="resume">Resume</a></li>
-          <li><a href="#contact" class="contact">Contact</a></li>
+          <li><a href="#home" class="home tab-highlight active">Home</a></li>
+          <li><a href="#works" class="works tab-highlight">Works</a></li>
+          <li><a href="#resume" class="resume tab-highlight">Resume</a></li>
+          <li><a href="#footer" class="footer contact-btn">Contact</a></li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -58,51 +59,62 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="home" class="hero">
 
-    <div class="info d-flex align-items-start">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6 hero-container">
-            <h2 data-aos="fade-down" class="hero-header">BLAH BLAH</h2>
-            <p data-aos="fade-up">Blah Blah Blah. Blah Blah Blah.</p>
-            <a data-aos="fade-up" data-aos-delay="200" href="#works" class="btn-projects">Learn More</a>
+<section id="home" class="hero">
+
+    <div class="row justify-content-between gy-4">
+          <div class="info col-lg-6 d-flex align-items-center" data-aos="fade-up">
+            <div class="content hero-container">
+              <h2 data-aos="fade-down" class="hero-header">Kessie Leung</h2>
+              <div class="navbar-switch"></div>
+            <div class="hero-subheader">
+              <h3 data-aos="fade-down" class="hero-subheader-highlight">Job</h3>
+            <h3 data-aos="fade-down" class="hero-subheader-text"> &nbsp;Title</h3>
+            </div>
+            <div class="hero-subcontainer">
+              <p data-aos="fade-up" class="hero-services"><i class="bi bi-vector-pen"></i> &nbsp;Description</p>
+              <p data-aos="fade-up" class="hero-descriptions">Blah Blah Blah Blah Blah Blah. Blah Blah Blah. Blah Blah Blah Blah Blah Blah. Blah Blah Blah Blah Blah Blah. Blah Blah Blah. Blah Blah Blah Blah Blah Blah.</p>
+              <a data-aos="fade-up" data-aos-delay="100" href="#works" class="hero-cta-btn">Learn More</a>
+            </div>
           </div>
+
+          <div class="col-lg-6 hero-image" style="background-image: url(assets/img/placeholder.jpeg);" data-aos="zoom-in" data-aos-delay="100"></div>
         </div>
+
       </div>
-    </div>
 
     <div id="hero-carousel" class="carousel slide get-started" data-bs-ride="carousel" data-bs-interval="5000">
-      <div class="carousel-item active" style="background-image: url()"></div>
     </div>
 
-  </section><!-- End Hero Section -->
+  </section>
+
+  
 
   <main id="main">
 
     <!-- ======= My Works Section ======= -->
-    <section id="works" class="projects section-bg">
+    <section id="works" class="works section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
           <h2>My Works</h2>
-          <p>I have worked on numerous projects, from writing blog posts to editing videos. I am delighted to share my proudest works with you. Feel free to click the following images to learn more about the specific works you are interested in.</p>
+          <p>My work is a mixture of in-house, school and personal projects. I am delighted to share my proudest works with you. Feel free to click the following images to learn more about the specific works you are interested in.</p>
         </div>
 
-        <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="fitRows" data-portfolio-sort="original-order">
+        <div class="works-isotope" data-portfolio-filter="*" data-portfolio-layout="fitRows" data-portfolio-sort="original-order">
 
-          <ul class="portfolio-flters" data-aos="fade-up" data-aos-delay="100">
+          <ul class="works-filters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">All</li>
             <li data-filter=".filter-blogWriting">Blog Writing</li>
             <li data-filter=".filter-researchWriting">Research Writing</li>
-            <li data-filter=".filter-scriptWriting">Script Writing</li>
+            <li data-filter=".filter-scriptWriting">Scriptwriting</li>
             <li data-filter=".filter-videoEditing">Video Editing</li>
           </ul><!-- End Projects Filters -->
 
 
-          <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+          <div class="row gy-4 works-container" data-aos="fade-up" data-aos-delay="200">
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-blogWriting">
+            <div class="col-lg-4 col-md-6 works-item filter-blogWriting">
               <div class="post-item position-relative h-100">
                 <div class="post-img position-relative overflow-hidden">
                   <img src="assets/img/thumbnails/We_Met_in_Virtual_Reality.webp" class="img-fluid" alt="" />
@@ -120,14 +132,14 @@
                   <a target="_blank" href="Works/Social_Impacts_of_VRChat.html" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
                 </div>
               </div>
-            </div><!-- End Projects Item -->
+            </div><!-- End Work Item -->
 
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-researchWriting">
+            <div class="col-lg-4 col-md-6 works-item filter-researchWriting">
               <div class="post-item position-relative h-100">
                 <div class="post-img position-relative overflow-hidden">
                   <img src="assets/img/thumbnails/Doki_Doki_Literature_Club.jpeg" class="img-fluid" alt="" />
-                  <span class="post-type">Research Essay</span>
+                  <span class="post-type">Essay</span>
                 </div>
 
                 <div class="post-content d-flex flex-column">
@@ -141,10 +153,10 @@
                   <a target="_blank" href="Works/Blurring_the_Boundary_of_Magic Circle.html" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
                 </div>
               </div>
-            </div><!-- End Projects Item -->
+            </div><!-- End Work Item -->
 
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-videoEditing">
+            <div class="col-lg-4 col-md-6 works-item filter-videoEditing">
               <div class="post-item position-relative h-100">
                 <div class="post-img position-relative overflow-hidden">
                   <img src="assets/img/thumbnails/Pokemon_Legends_Arceus.jpeg" class="img-fluid" alt="" />
@@ -162,10 +174,10 @@
                   <a target="_blank" href="Works/Lets_Play_Pokémon_Legends_Arceus.html" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
                 </div>
               </div>
-            </div><!-- End Projects Item -->
+            </div><!-- End Work Item -->
 
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-blogWriting">
+            <div class="col-lg-4 col-md-6 works-item filter-blogWriting">
               <div class="post-item position-relative h-100">
                 <div class="post-img position-relative overflow-hidden">
                   <img src="assets/img/thumbnails/Yuck_Factor.jpeg" class="img-fluid" alt="" />
@@ -183,14 +195,14 @@
                   <a target="_blank" href="Works/The_Internet_is_Yucky.html" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
                 </div>
               </div>
-            </div><!-- End Projects Item -->
+            </div><!-- End Work Item -->
 
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-researchWriting">
+            <div class="col-lg-4 col-md-6 works-item filter-researchWriting">
               <div class="post-item position-relative h-100">
                 <div class="post-img position-relative overflow-hidden">
                   <img src="assets/img/thumbnails/Moonlight_Cottage_by_Thomas_Kinkade.jpeg" class="img-fluid" alt="" />
-                  <span class="post-type">Research Essay</span>
+                  <span class="post-type">Essay</span>
                 </div>
 
                 <div class="post-content d-flex flex-column">
@@ -204,14 +216,14 @@
                   <a target="_blank" href="Works/ThomasKinkade.html" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
                 </div>
               </div>
-            </div><!-- End Projects Item -->
+            </div><!-- End Work Item -->
 
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-researchWriting">
+            <div class="col-lg-4 col-md-6 works-item filter-researchWriting">
               <div class="post-item position-relative h-100">
                 <div class="post-img position-relative overflow-hidden">
                   <img src="assets/img/thumbnails/The_Uncanny_Valley.jpeg" class="img-fluid" alt="" />
-                  <span class="post-type">Research Essay</span>
+                  <span class="post-type">Essay</span>
                 </div>
 
                 <div class="post-content d-flex flex-column">
@@ -225,10 +237,10 @@
                   <a target="_blank" href="Works/The_Uncanny_Valley.html" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
                 </div>
               </div>
-            </div><!-- End Projects Item -->
+            </div><!-- End Work Item -->
 
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-videoEditing">
+            <div class="col-lg-4 col-md-6 works-item filter-videoEditing">
               <div class="post-item position-relative h-100">
                 <div class="post-img position-relative overflow-hidden">
                   <img src="assets/img/thumbnails/Surveillance_Camera.png" class="img-fluid" alt="" />
@@ -246,10 +258,10 @@
                   <a target="_blank" href="Works/Home_Surveillance_Camera.html" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
                 </div>
               </div>
-            </div><!-- End Projects Item -->
+            </div><!-- End Work Item -->
 
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-scriptWriting filter-videoEditing">
+            <div class="col-lg-4 col-md-6 works-item filter-scriptWriting filter-videoEditing">
               <div class="post-item position-relative h-100">
                 <div class="post-img position-relative overflow-hidden">
                   <img src="assets/img/thumbnails/FYP.png" class="img-fluid" alt="" />
@@ -267,10 +279,10 @@
                   <a target="_blank" href="Works/Final_Year_Project.html" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
                 </div>
               </div>
-            </div><!-- End Projects Item -->
+            </div><!-- End Work Item -->
 
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-scriptWriting filter-videoEditing">
+            <div class="col-lg-4 col-md-6 works-item filter-scriptWriting filter-videoEditing">
               <div class="post-item position-relative h-100">
                 <div class="post-img position-relative overflow-hidden">
                   <img src="assets/img/thumbnails/HKHS_Social_Media.jpg" class="img-fluid" alt="" />
@@ -288,779 +300,317 @@
                   <a target="_blank" href="Works/Identify_the_Authenticity_of_Social_Media.html" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
                 </div>
               </div>
-            </div><!-- End Projects Item -->
+            </div><!-- End Work Item -->
             
-          </div><!-- End Projects Container -->
+          </div><!-- End Works Container -->
         </div>
       </div>
-    </section><!-- End Our Projects Section -->
+    </section><!-- End My Works Section -->
 
 
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-        <div class="container">
-          <div class="section-header">
-          <h2>Contact</h2>
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume section-bg-white">
+      <div class="container">
+
+        <div class="section-header">
+          <h2>Resume</h2>
+          <p>Blah Blah Blah Blah Blah Blah. Blah Blah Blah Blah Blah Blah. Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah. Blah Blah Blah Blah Blah Blah. Blah Blah Blah Blah Blah Blah. Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah.</p>
+          <a href="assets/pdf/Kessie_Leung-resume.pdf" class="downloadPDF" target="_blank" download><i class="bi bi-download"></i>&nbsp;&nbsp;Download PDF version</a>
         </div>
 
-        <div class="row justify-content-between gy-4">
-          
 
-          <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up">
+        <div class="row gy-4">
+          <div class="resume-container d-flex align-items-center">
+            <div class="content col-lg-5">
+              <h3 class="resume-subheading">About</h3>
+              <p>Kessie Leung is a Creative Media postgraduate student with a passion for media cultures and motivation to learn new technologies and knowledge related to digital media. As a versatile team player, she is always ready to accept new challenges and adapt to different work cultures.</p>
+              <h4><i class="bi bi-geo-alt"></i> HKSAR, China</h4>
+            </div>
+
+            <div class="col-lg-6 img-bg" style="background-image: url(assets/img/placeholder.jpeg);"></div>
+          </div><!-- End Resume Container -->
+        </div>
+
+        <div class="education-container">
+
+          <h3 class="resume-subheading">Education</h3>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="education-item position-relative">
+                <div class="icon">
+                  <i class="bi bi-pencil-fill"></i>
+                </div>
+                <h3>Master of Art in Creative Media</h3>
+                <h4>at City University of Hong Kong, HKSAR, China [CGPA : 3.86/4.3]</h4>
+                <p>2022 — Present</p>
+              </div>
+            </div><!-- End Education Item -->
+
+            <div class="col-md-6">
+              <div class="education-item position-relative">
+                <div class="icon">
+                  <i class="bi bi-file-earmark-code-fill"></i>
+                </div>
+                <h3>Bachelor of Science in Computer Science</h3>
+                <h4>at City University of Hong Kong, HKSAR, China [CGPA : 3.47/4.3]</h4>
+                <p>2018 — 2022</p>
+              </div>
+            </div><!-- End Education Item -->
+          </div><!-- End Education Row -->
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="education-item position-relative">
+                <div class="icon">
+                  <i class="bi bi-globe-europe-africa"></i>
+                </div>
+                <h3>Semester Exchange</h3>
+                <h4>at University of Liverpool, Liverpool, United Kingdom</h4>
+                <p>Spring 2020</p>
+              </div>
+            </div><!-- End Education Item -->
+
+            <div class="col-md-6">
+              <div class="education-item position-relative">
+                <div class="icon">
+                  <i class="bi bi-sun-fill"></i>
+                </div>
+                <h3>Summer Exchange</h3>
+                <h4>at Sheffield Hallam University, Sheffield, United Kingdom</h4>
+                <p>Summer 2019</p>
+              </div>
+            </div><!-- End Education Item -->
+          </div><!-- End Education Row -->
+
+        </div><!-- End Education Container -->
+
+        <div class="skills-container row justify-content-between gy-4">
+          <h3 class="resume-subheading">Skills</h3>
+
+          <div class="col-lg-5 flex-column justify-content-between">
+            <h4>Proficient in:</h4>
+
+            <div class="icon-box d-flex position-relative">
+              <img src="assets/img/icons/Microsoft_Office_logo.webp"></img>
+              <div>
+                <p>&nbsp; MS Office</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="icon-box d-flex position-relative">
+              <img src="assets/img/icons/Canva_logo.png"></img>
+              <div>
+                <p>&nbsp; Canva</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="icon-box d-flex position-relative">
+              <img src="assets/img/icons/Final_Cut_Pro_logo.png"></img>
+              <div>
+                <p>&nbsp; Final Cut Pro</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="icon-box d-flex position-relative">
+              <img src="assets/img/icons/Google_Suite_logo.png"></img>
+              <div>
+                <p>&nbsp; Google Suite</p>
+              </div>
+            </div><!-- End Icon Box -->
+          </div>
+
+          <div class="col-lg-5 flex-column justify-content-between">
+            <h4>Intermediate in:</h4>
+
+            <div class="icon-box d-flex position-relative">
+              <img src="assets/img/icons/DaVinci_Resolve_logo.png"></img>
+              <div>
+                <p>&nbsp; DaVinci Resolve</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="icon-box d-flex position-relative">
+              <img src="assets/img/icons/web_design_logo.png"></img>
+              <div>
+                <p>&nbsp; Web Design (HTML, CSS, JS)</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="icon-box d-flex position-relative">
+              <img src="assets/img/icons/C++_logo.png"></img>
+              <div>
+                <p>&nbsp; C++</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="icon-box d-flex position-relative">
+              <img src="assets/img/icons/Java_logo.png"></img>
+              <div>
+                <p>&nbsp; Java</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="icon-box d-flex position-relative">
+              <img src="assets/img/icons/Matlab_logo.png"></img>
+              <div>
+                <p>&nbsp; MATLAB</p>
+              </div>
+            </div><!-- End Icon Box -->
+          </div><!-- End Skills Container -->
+
+          <div class="language-container row gy-5 justify-content-center">
+            <h3 class="resume-subheading">Language</h3>
+
+            <div class="col-xl-4 col-md-6">
+              <div class="language-item position-relative h-100 ">
+
+                <div class="position-relative overflow-hidden">
+                  <img src="assets/img/icons/Cantonese_icon.png" class="img-fluid" alt="">
+                </div>
+
+                <div class="d-flex flex-column">
+                  <h4>Cantonese</h4>
+                  <p>Native</p>
+                </div>
+              </div>
+            </div><!-- End language item -->
+
+            <div class="col-xl-4 col-md-6">
+              <div class="language-item position-relative h-100">
+
+                <div class="position-relative overflow-hidden">
+                  <img src="assets/img/icons/English_icon.png" class="img-fluid" alt="">
+                </div>
+
+                <div class="d-flex flex-column">
+                  <h4>English</h4>
+                  <p>Fluent</p>
+                </div>
+              </div>
+            </div><!-- End language item -->
+
+            <div class="col-xl-4 col-md-6">
+              <div class="language-item position-relative h-100">
+
+                <div class="position-relative overflow-hidden">
+                  <img src="assets/img/icons/Mandarin_icon.png" class="img-fluid" alt="">
+                </div>
+
+                <div class="d-flex flex-column">
+                  <h4>Mandarin</h4>
+                  <p>Intermediate</p>
+                </div>
+              </div>
+            </div><!-- End language item -->
+
+          </div><!-- End language container -->
+
+          <div class="work-experiences-container row justify-content-between gy-4">
+            <h3 class="resume-subheading">Work Experiences</h3>
+
+            <div class="work-experiences-item col-lg-5 flex-column justify-content-between">
+              <h2>IT Intern (Security)</h2>
+              <h4>Jul 2020 — Jun 2021 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; at Hong Kong Housing Society, HKSAR, China</h4>
+              <ul>
+                <li>Research cybersecurity-related topics</li>
+                <li>Create and distribute materials for staff's security awareness training, including videos and monthly comic strips.</li>
+                <li>Raise staff's security awareness to protect the organization and themselves.</li>
+                <li>Provide system support to the users in the company.</li>
+                <li>Troubleshoot users’ inquiries and communicate with them actively.</li>
+                <li>Facilitate the work of the company by providing guidance to the staff.</li>
+              </ul>
+            </div><!-- End work experiences item -->
+          </div><!-- End work experiences container -->
+
+          <div class="extracurricular-activities-container row justify-content-between gy-4">
+            <h3 class="resume-subheading">Extracurricular Activities</h3>
+
+            <div class="extracurricular-activities-item col-lg-5 flex-column justify-content-between">
+              <h2>Student Mentor</h2>
+              <h4>Jul 2019 — Jun 2020 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; at City University of Hong Kong, HKSAR, China</h4>
+              <ul>
+                <li>Advise, support and guide freshmen in their university life.</li>
+                <li>Discuss with the freshmen to understand and analyze the challenges they faced.</li>
+                <li>Freshmen become more familiar with the new environment faster.</li>
+              </ul>
+            </div><!-- End extracurricular activities item -->
+            
+          </div><!-- End extracurricular activities container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- End Resume Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <section id="footer" class="footer">
+
+    <div class="footer-content position-relative">
+      <div class="container">
+        <div class="row justify-content-around gy-4">
+
+          <div class="col-lg-6 footer-message">
+            <h3>Get in touch</h3>
+            <p>Don't hesitate to get in touch, even if it's just to say hello. I'm always happy to help.</p>
+            <a href="https://www.linkedin.com/in/khlleung/" target="_blank"><i class="bi bi-linkedin"></i></a>
+          </div>
+
+          <div class="col-lg-5 d-flex flex-column justify-content-center">
             <div class="content">
               <form action="https://formsubmit.co/27e40cc0e38b6462dc141d70b527bc6c" method="POST" class="php-email-form">
-                <h3>Let's Talk!</h3>
-                <p>Don't hesitate to get in touch, even if it's just to say hello. I'm always happy to help.</p>
 
                 <input type="hidden" name="_subject" value="New Submission from Contact Form">
                 <input type="hidden" name="_autoresponse" value="Thank you for your message. I will response to you ASAP.">
                 <input type="hidden" name="_template" value="table">
 
                 <div class="row gy-3">
-                <div class="col-md-12">
-                  <input type="text" name="name" class="form-control" placeholder="Name" required>
-                </div>
-                <div class="col-md-12">
-                  <input type="email" class="form-control" name="email" placeholder="Email" required>
-                </div>
-                <div class="col-md-12">
-                  <input type="phone" class="form-control" name="phone" placeholder="Phone">
-                </div>
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
-                </div>
-                <div class="col-md-12">
-                  <input type="text" name="winnielove" style="display:none !important" tabindex="-1" autocomplete="off">
-                </div>
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent successfully. Thank you!</div>
-                  <button type="submit">Send</button>
-                </div>
-              </div>
-            </form>
-            </div>
-          </div>
-
-          <div class="col-lg-5 contact-info" data-aos="fade">
-            <div class="location">
-              <h3>Based in</h3>
-              <p>HKSAR, China</p>
-            </div>
-            <hr>
-
-            <div class="social-media-links">
-              <h3>You can also find me at:</h3>
-              <p>Linkedin</p>
-            </div>
-            
-          </div><!-- End Contact Form -->
-
-        </div>
-
-      </div>
-    </section><!-- End Get Started Section -->
-
-
-
-    <!-- ======= Get Started Section ======= -->
-    <section id="get-started" class="get-started section-bg">
-      <div class="container">
-
-        <div class="row justify-content-between gy-4">
-
-          <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up">
-            <div class="content">
-              <h3>About Me</h3>
-              <p>A detail-minded and dedicated Creative Media postgraduate student with a passion for media culture and proven to be equipped with interpersonal skills.
-              <p>Aliquam velit deserunt autem. Inventore et saepe. Tenetur suscipit eligendi labore culpa eos. Deserunt porro magni qui necessitatibus dolorem at animi cupiditate.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-5" data-aos="fade">
-            <form action="forms/quote.php" method="post" class="php-email-form">
-              <h3>Get a quote</h3>
-              <p>Vel nobis odio laboriosam et hic voluptatem. Inventore vitae totam. Rerum repellendus enim linead sero park flows.</p>
-              <div class="row gy-3">
-
-                <div class="col-md-12">
-                  <input type="text" name="name" class="form-control" placeholder="Name" required>
-                </div>
-
-                <div class="col-md-12 ">
-                  <input type="email" class="form-control" name="email" placeholder="Email" required>
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="phone" placeholder="Phone" required>
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your quote request has been sent successfully. Thank you!</div>
-
-                  <button type="submit">Get a quote</button>
-                </div>
-
-              </div>
-            </form>
-          </div><!-- End Quote Form -->
-
-        </div>
-
-      </div>
-    </section><!-- End Get Started Section -->
-
-    <!-- ======= Constructions Section ======= -->
-    <section id="constructions" class="constructions">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-header">
-          <h2>Constructions</h2>
-          <p>Nulla dolorum nulla nesciunt rerum facere sed ut inventore quam porro nihil id ratione ea sunt quis dolorem dolore earum</p>
-        </div>
-
-        <div class="row gy-4">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="card-item">
-              <div class="row">
-                <div class="col-xl-5">
-                  <div class="card-bg" style="background-image: url(assets/img/constructions-1.jpg);"></div>
-                </div>
-                <div class="col-xl-7 d-flex align-items-center">
-                  <div class="card-body">
-                    <h4 class="card-title">Eligendi omnis sunt veritatis.</h4>
-                    <p>Fuga in dolorum et iste et culpa. Commodi possimus nesciunt modi voluptatem placeat deleniti adipisci. Cum delectus doloribus non veritatis. Officia temporibus illo magnam. Dolor eos et.</p>
+                  <div class="col-md-12">
+                    <p>Name</p>
+                    <input type="text" name="name" class="form-control" required>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Card Item -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="card-item">
-              <div class="row">
-                <div class="col-xl-5">
-                  <div class="card-bg" style="background-image: url(assets/img/constructions-2.jpg);"></div>
-                </div>
-                <div class="col-xl-7 d-flex align-items-center">
-                  <div class="card-body">
-                    <h4 class="card-title">Possimus ut sed velit assumenda</h4>
-                    <p>Sunt deserunt maiores voluptatem autem est rerum perferendis rerum blanditiis. Est laboriosam qui iste numquam laboriosam voluptatem architecto. Est laudantium sunt at quas aut hic. Eum dignissimos.</p>
+                  <div class="col-md-12">
+                    <p>Email</p>
+                    <input type="email" class="form-control" name="email" required>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Card Item -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="card-item">
-              <div class="row">
-                <div class="col-xl-5">
-                  <div class="card-bg" style="background-image: url(assets/img/constructions-3.jpg);"></div>
-                </div>
-                <div class="col-xl-7 d-flex align-items-center">
-                  <div class="card-body">
-                    <h4 class="card-title">Error beatae dolor inventore aut</h4>
-                    <p>Dicta porro nobis. Velit cum in. Nesciunt dignissimos enim molestiae facilis numquam quae quaerat ipsam omnis. Neque debitis ipsum at architecto officia laboriosam odit. Ut sunt temporibus nulla culpa.</p>
+                  <div class="col-md-12">
+                    <p>Phone Number <span>(optional)</span></p>
+                    <input type="phone" class="form-control" name="phone">
                   </div>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Card Item -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="card-item">
-              <div class="row">
-                <div class="col-xl-5">
-                  <div class="card-bg" style="background-image: url(assets/img/constructions-4.jpg);"></div>
-                </div>
-                <div class="col-xl-7 d-flex align-items-center">
-                  <div class="card-body">
-                    <h4 class="card-title">Expedita voluptas ut ut nesciunt</h4>
-                    <p>Aut est quidem doloremque voluptatem magnam quis excepturi vero quia. Eum eos doloremque architecto illo at beatae dolore. Fugiat suscipit et sint ratione dolores. Aut aliquid ea dolores libero nobis.</p>
+                  <div class="col-md-12">
+                    <p>Message</p>
+                    <textarea class="form-control" name="message" rows="6" required></textarea>
                   </div>
-                </div>
+                  <div class="col-md-12">
+                    <input type="text" name="winnielove" style="display:none !important" tabindex="-1" autocomplete="off">
+                  </div>
+                  <div class="col-md-12 text-center">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent successfully. Thank you!</div>
+                    <button type="submit">Send Message</button>
+                  </div>
               </div>
+              </form>
             </div>
-          </div><!-- End Card Item -->
-
-        </div>
-
-      </div>
-    </section><!-- End Constructions Section -->
-
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-header">
-          <h2>Services</h2>
-          <p>Voluptatem quibusdam ut ullam perferendis repellat non ut consequuntur est eveniet deleniti fignissimos eos quam</p>
-        </div>
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item  position-relative">
-              <div class="icon">
-                <i class="fa-solid fa-mountain-city"></i>
-              </div>
-              <h3>Nesciunt Mete</h3>
-              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
-              <a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fa-solid fa-arrow-up-from-ground-water"></i>
-              </div>
-              <h3>Eosle Commodi</h3>
-              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
-              <a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fa-solid fa-compass-drafting"></i>
-              </div>
-              <h3>Ledo Markt</h3>
-              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
-              <a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fa-solid fa-trowel-bricks"></i>
-              </div>
-              <h3>Asperiores Commodit</h3>
-              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-              <a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fa-solid fa-helmet-safety"></i>
-              </div>
-              <h3>Velit Doloremque</h3>
-              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
-              <a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fa-solid fa-arrow-up-from-ground-water"></i>
-              </div>
-              <h3>Dolori Architecto</h3>
-              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-              <a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-        </div>
-
-      </div>
-    </section><!-- End Services Section -->
-
-    <!-- ======= Alt Services Section ======= -->
-    <section id="alt-services" class="alt-services">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row justify-content-around gy-4">
-          <div class="col-lg-6 img-bg" style="background-image: url(assets/img/alt-services.jpg);" data-aos="zoom-in" data-aos-delay="100"></div>
-
-          <div class="col-lg-5 d-flex flex-column justify-content-center">
-            <h3>Enim quis est voluptatibus aliquid consequatur fugiat</h3>
-            <p>Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi</p>
-
-            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="100">
-              <i class="bi bi-easel flex-shrink-0"></i>
-              <div>
-                <h4><a href="" class="stretched-link">Lorem Ipsum</a></h4>
-                <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-              </div>
-            </div><!-- End Icon Box -->
-
-            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="200">
-              <i class="bi bi-patch-check flex-shrink-0"></i>
-              <div>
-                <h4><a href="" class="stretched-link">Nemo Enim</a></h4>
-                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-              </div>
-            </div><!-- End Icon Box -->
-
-            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-brightness-high flex-shrink-0"></i>
-              <div>
-                <h4><a href="" class="stretched-link">Dine Pad</a></h4>
-                <p>Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit. Sunt aut deserunt minus aut eligendi omnis</p>
-              </div>
-            </div><!-- End Icon Box -->
-
-            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-brightness-high flex-shrink-0"></i>
-              <div>
-                <h4><a href="" class="stretched-link">Tride clov</a></h4>
-                <p>Est voluptatem labore deleniti quis a delectus et. Saepe dolorem libero sit non aspernatur odit amet. Et eligendi</p>
-              </div>
-            </div><!-- End Icon Box -->
-
           </div>
         </div>
 
-      </div>
-    </section><!-- End Alt Services Section -->
-
-    <!-- ======= Features Section ======= -->
-    <section id="features" class="features section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <ul class="nav nav-tabs row  g-2 d-flex">
-
-          <li class="nav-item col-3">
-            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
-              <h4>Modisit</h4>
-            </a>
-          </li><!-- End tab nav item -->
-
-          <li class="nav-item col-3">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
-              <h4>Praesenti</h4>
-            </a><!-- End tab nav item -->
-
-          <li class="nav-item col-3">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
-              <h4>Explica</h4>
-            </a>
-          </li><!-- End tab nav item -->
-
-          <li class="nav-item col-3">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
-              <h4>Nostrum</h4>
-            </a>
-          </li><!-- End tab nav item -->
-
-        </ul>
-
-        <div class="tab-content">
-
-          <div class="tab-pane active show" id="tab-1">
-            <div class="row">
-              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
-                <h3>Voluptatem dignissimos provident</h3>
-                <p class="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua.
-                </p>
-                <ul>
-                  <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  <li><i class="bi bi-check2-all"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                  <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-                </ul>
-              </div>
-              <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
-                <img src="assets/img/features-1.jpg" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div><!-- End tab content item -->
-
-          <div class="tab-pane" id="tab-2">
-            <div class="row">
-              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-                <h3>Neque exercitationem debitis</h3>
-                <p class="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua.
-                </p>
-                <ul>
-                  <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  <li><i class="bi bi-check2-all"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                  <li><i class="bi bi-check2-all"></i> Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</li>
-                  <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-                </ul>
-              </div>
-              <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/features-2.jpg" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div><!-- End tab content item -->
-
-          <div class="tab-pane" id="tab-3">
-            <div class="row">
-              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-                <h3>Voluptatibus commodi accusamu</h3>
-                <ul>
-                  <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  <li><i class="bi bi-check2-all"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                  <li><i class="bi bi-check2-all"></i> Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</li>
-                </ul>
-                <p class="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua.
-                </p>
-              </div>
-              <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/features-3.jpg" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div><!-- End tab content item -->
-
-          <div class="tab-pane" id="tab-4">
-            <div class="row">
-              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-                <h3>Omnis fugiat ea explicabo sunt</h3>
-                <p class="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua.
-                </p>
-                <ul>
-                  <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  <li><i class="bi bi-check2-all"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                  <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-                </ul>
-              </div>
-              <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/features-4.jpg" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div><!-- End tab content item -->
-
-        </div>
-
-      </div>
-    </section><!-- End Features Section -->
-
-    
-
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-header">
-          <h2>Testimonials</h2>
-          <p>Quam sed id excepturi ccusantium dolorem ut quis dolores nisi llum nostrum enim velit qui ut et autem uia reprehenderit sunt deleniti</p>
-        </div>
-
-        <div class="slides-2 swiper">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                  <h3>Saul Goodman</h3>
-                  <h4>Ceo &amp; Founder</h4>
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                  <h3>Sara Wilsson</h3>
-                  <h4>Designer</h4>
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                  <h3>Jena Karlis</h3>
-                  <h4>Store Owner</h4>
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                  <h3>Matt Brandon</h3>
-                  <h4>Freelancer</h4>
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                  <h3>John Larson</h3>
-                  <h4>Entrepreneur</h4>
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-    </section><!-- End Testimonials Section -->
-
-    <!-- ======= Recent Blog Posts Section ======= -->
-    <section id="recent-blog-posts" class="recent-blog-posts">
-      <div class="container" data-aos="fade-up"">
-
-    
-    
-  <div class=" section-header">
-        <h2>Recent Blog Posts</h2>
-        <p>In commodi voluptatem excepturi quaerat nihil error autem voluptate ut et officia consequuntu</p>
-      </div>
-
-      <div class="row gy-5">
-
-        <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-          <div class="post-item position-relative h-100">
-
-            <div class="post-img position-relative overflow-hidden">
-              <img src="assets/img/blog/blog-1.jpg" class="img-fluid" alt="">
-              <span class="post-date">December 12</span>
-            </div>
-
-            <div class="post-content d-flex flex-column">
-
-              <h3 class="post-title">Eum ad dolor et. Autem aut fugiat debitis</h3>
-
-              <div class="meta d-flex align-items-center">
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-person"></i> <span class="ps-2">Julia Parker</span>
-                </div>
-                <span class="px-3 text-black-50">/</span>
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-folder2"></i> <span class="ps-2">Politics</span>
-                </div>
-              </div>
-
-              <hr>
-
-              <a href="blog-details.html" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
-
-            </div>
-
-          </div>
-        </div><!-- End post item -->
-
-        <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-          <div class="post-item position-relative h-100">
-
-            <div class="post-img position-relative overflow-hidden">
-              <img src="assets/img/blog/blog-2.jpg" class="img-fluid" alt="">
-              <span class="post-date">July 17</span>
-            </div>
-
-            <div class="post-content d-flex flex-column">
-
-              <h3 class="post-title">Et repellendus molestiae qui est sed omnis</h3>
-
-              <div class="meta d-flex align-items-center">
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-person"></i> <span class="ps-2">Mario Douglas</span>
-                </div>
-                <span class="px-3 text-black-50">/</span>
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-folder2"></i> <span class="ps-2">Sports</span>
-                </div>
-              </div>
-
-              <hr>
-
-              <a href="blog-details.html" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
-
-            </div>
-
-          </div>
-        </div><!-- End post item -->
-
-        <div class="col-xl-4 col-md-6">
-          <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="300">
-
-            <div class="post-img position-relative overflow-hidden">
-              <img src="assets/img/blog/blog-3.jpg" class="img-fluid" alt="">
-              <span class="post-date">September 05</span>
-            </div>
-
-            <div class="post-content d-flex flex-column">
-
-              <h3 class="post-title">Quia assumenda est et veritati tirana ploder</h3>
-
-              <div class="meta d-flex align-items-center">
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-person"></i> <span class="ps-2">Lisa Hunter</span>
-                </div>
-                <span class="px-3 text-black-50">/</span>
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-folder2"></i> <span class="ps-2">Economics</span>
-                </div>
-              </div>
-
-              <hr>
-
-              <a href="blog-details.html" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
-
-            </div>
-
-          </div>
-        </div><!-- End post item -->
-
-      </div>
-
-      </div>
-    </section>
-    <!-- End Recent Blog Posts Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
-
-    <div class="footer-content position-relative">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6">
-            <div class="footer-info">
-              <h3>UpConstruction</h3>
-              <p>
-                A108 Adam Street <br>
-                NY 535022, USA<br><br>
-                <strong>Phone:</strong> +1 5589 55488 55<br>
-                <strong>Email:</strong> info@example.com<br>
-              </p>
-              <div class="social-links d-flex mt-3">
-                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-twitter"></i></a>
-                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
-                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
-                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-          </div><!-- End footer info column-->
-
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Terms of service</a></li>
-              <li><a href="#">Privacy policy</a></li>
-            </ul>
-          </div><!-- End footer links column-->
-
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><a href="#">Web Design</a></li>
-              <li><a href="#">Web Development</a></li>
-              <li><a href="#">Product Management</a></li>
-              <li><a href="#">Marketing</a></li>
-              <li><a href="#">Graphic Design</a></li>
-            </ul>
-          </div><!-- End footer links column-->
-
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Hic solutasetp</h4>
-            <ul>
-              <li><a href="#">Molestiae accusamus iure</a></li>
-              <li><a href="#">Excepturi dignissimos</a></li>
-              <li><a href="#">Suscipit distinctio</a></li>
-              <li><a href="#">Dilecta</a></li>
-              <li><a href="#">Sit quas consectetur</a></li>
-            </ul>
-          </div><!-- End footer links column-->
-
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Nobis illum</h4>
-            <ul>
-              <li><a href="#">Ipsam</a></li>
-              <li><a href="#">Laudantium dolorum</a></li>
-              <li><a href="#">Dinera</a></li>
-              <li><a href="#">Trodelas</a></li>
-              <li><a href="#">Flexo</a></li>
-            </ul>
-          </div><!-- End footer links column-->
-
-        </div>
       </div>
     </div>
 
     <div class="footer-legal text-center position-relative">
       <div class="container">
         <div class="copyright">
-          &copy; Copyright <strong><span>UpConstruction</span></strong>. All Rights Reserved
-        </div>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/ -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          &copy; 2023 <strong><span>Kessie Leung</span></strong>. All Rights Reserved.
         </div>
       </div>
     </div>
 
-  </footer>
+  </section>
   <!-- End Footer -->
 
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
@@ -1075,7 +625,6 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- JS File -->
   
