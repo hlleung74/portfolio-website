@@ -137,11 +137,6 @@ section {
   line-height: 0;
 }
 
-.scroll-top:hover {
-  background: #ffc732;
-  color: #fff;
-}
-
 .scroll-top.active {
   visibility: visible;
   opacity: 1;
@@ -756,15 +751,39 @@ section {
   }
 }
 
-@media (max-width: 610px) {
+@media (max-width: 620px) {
   .hero .hero-header {
-    font-size: 60px;
+    font-size: 70px;
   }
   .hero .hero-subheader-highlight {
-    font-size: 50px;
+    font-size: 60px;
   }
   .hero .hero-subheader-text {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 545px) {
+  .hero .hero-header {
     font-size: 50px;
+  }
+  .hero .hero-subheader-highlight {
+    font-size: 40px;
+  }
+  .hero .hero-subheader-text {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 425px) {
+  .hero .hero-header {
+    font-size: 35px;
+  }
+  .hero .hero-subheader-highlight {
+    font-size: 25px;
+  }
+  .hero .hero-subheader-text {
+    font-size: 25px;
   }
 }
 
