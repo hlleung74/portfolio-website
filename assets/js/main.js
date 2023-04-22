@@ -315,7 +315,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
-
   /**
    * Hero Header Resize
    */
