@@ -245,6 +245,31 @@ section {
   padding-bottom: 5px;
 }
 
+.work-description .view-PDF-btn {
+  color: var(--color-highlight);
+  border-style: solid;
+  border-width: 3px;
+  border-color: var(--color-highlight);
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-align: center;
+  display:inline-block;
+
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+
+.work-description .view-PDF-btn:hover {
+  background: var(--color-highlight);
+  color: var(--color-light);
+}
+
 .other-works h2 {
   font-size: 28px;
   color: var(--color-dark);
@@ -1305,7 +1330,21 @@ div.viewWorks {
 }
 
 .resume .work-experiences-container .work-experiences-item {
+  float: left;
+  width: 50%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.resume .work-experiences-container .work-experiences-row {
   width: 100%;
+
+}
+
+.resume .work-experiences-container .work-experiences-row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .resume .work-experiences-container h2 {
