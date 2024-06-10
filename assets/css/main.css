@@ -7,13 +7,13 @@
 
 /* Colors */
 :root {
-  --color-light: #F2FBFE;
-  --color-light30: rgb(242, 251, 254, 0.3);
-  --color-light70: rgb(242, 251, 254, 0.7);
-  --color-dark: #484F52;
-  --color-dark50: rgba(72, 79, 82, 0.5);
-  --color-highlight: #4D92B5;
-  --color-darkgrey: #717B80;
+  --color-light: #FFFFFF;
+  --color-light30: rgb(255, 255, 255, 0.3);
+  --color-light70: rgb(255, 255, 255, 0.7);
+  --color-dark: #2F4858;
+  --color-dark50: rgba(47, 72, 88, 0.5);
+  --color-highlight: #82A596;
+  --color-darkgrey: #9FADB6;
 }
 
 /* Smooth scroll behavior */
@@ -27,7 +27,7 @@
 body {
   font-family: var(--font-default);
   color: var(--color-light);
-  background: var(--color-dark);
+  background: var(--color-light);
   overflow-x: hidden;
 }
 
@@ -69,7 +69,7 @@ section {
 .section-header {
   text-align: center;
   padding-top: 70px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 .section-header h2 {
@@ -167,6 +167,10 @@ section {
   font-size: 28px;
   color: var(--color-dark);
   font-weight: 700;
+}
+
+.work-details .btn-visit {
+  text-decoration: underline;
 }
 
 .auto-resizable-iframe {
@@ -308,6 +312,10 @@ section {
   font-size: 24px;
   color: var(--color-light);
   line-height: 0;
+}
+
+.scroll-top:hover {
+  background: var(--color-dark);
 }
 
 .scroll-top.active {
@@ -639,7 +647,7 @@ section {
     inset: 0;
     padding: 50px 0 10px 0;
     margin: 0;
-    background: rgba(0, 0, 0, 0.8);
+    background: var(--color-dark);
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
@@ -974,7 +982,7 @@ section {
 
 .works .works-filters {
   padding: 0;
-  margin: 0 auto 25px auto;
+  margin: 0 auto 20px auto;
   list-style: none;
   text-align: center;
 }
@@ -995,7 +1003,7 @@ section {
 
 .works .works-filters li:hover,
 .works .works-filters li.filter-active {
-  color: var(--color-highlight);
+  color: var(--color-dark);
 }
 
 .works .works-filters li:first-child {
@@ -1025,7 +1033,7 @@ section {
   position: absolute;
   right: 0;
   top: 0;
-  background-color: var(--color-highlight);
+  background-color: var(--color-dark);
   color: #fff;
   text-transform: uppercase;
   font-size: 14px;
@@ -1101,10 +1109,10 @@ div.viewWorks {
   display: inline;
   padding: 10px 20px;
   text-align: center;
-  color: var(--color-highlight);
+  color: var(--color-dark);
   border-radius: 10px;
   margin: 30px auto;
-  border: 3px solid var(--color-highlight);
+  border: 3px solid var(--color-dark);
   overflow: hidden;
   z-index: 999;
   transition: 0.5s;
@@ -1112,7 +1120,7 @@ div.viewWorks {
 
 #load-more:hover {
   color: var(--color-light);
-  background-color: var(--color-highlight);
+  background-color: var(--color-dark);
 }
 
 @media (max-width: 780px) {
@@ -1133,6 +1141,10 @@ div.viewWorks {
 /*--------------------------------------------------------------
 # Resume Section
 --------------------------------------------------------------*/
+.resume {
+  padding-bottom: 0;
+}
+
 .resume .section-header p {
   margin-bottom: 40px;
 }
@@ -1141,16 +1153,23 @@ div.viewWorks {
   -webkit-text-stroke: 1px;
 }
 
+.resume .downloadPDF-container {
+  width: 100%;
+  display: inline-block !important;
+  margin-top: 40px;
+}
+
 .resume .downloadPDF {
   font-weight: 700;
   background-color: #fff;
   display: inline;
   padding: 15px 25px;
   text-align: center;
-  color: var(--color-highlight);
+  color: var(--color-dark);
   border-radius: 10px;
   margin: 30px auto;
-  border: 3px solid var(--color-highlight);
+  margin-top: 100px;
+  border: 3px solid var(--color-dark);
   overflow: hidden;
   z-index: 999;
   transition: 0.5s;
@@ -1158,7 +1177,7 @@ div.viewWorks {
 
 .resume .downloadPDF:hover {
   color: #fff;
-  background-color: var(--color-highlight);
+  background-color: var(--color-dark);
 }
 
 .resume .resume-container {
@@ -1168,7 +1187,7 @@ div.viewWorks {
 }
 
 .resume .content {
-  margin: 40px 0px 100px 0;
+  margin: 0 0px 100px 0;
   width: 55%;
   float: left;
 }
@@ -1194,6 +1213,18 @@ div.viewWorks {
   bottom: 0;
 }
 
+.resume .social-media-icon {
+  color: var(--color-highlight);
+  font-size: 30px;
+  padding-left: 2px;
+}
+
+.resume .social-media-icon:hover {
+  color: var(--color-dark);
+  font-size: 30px;
+  padding-left: 2px;
+}
+
 .resume .content p {
   font-size: 16px;
   color: var(--color-dark);
@@ -1203,7 +1234,7 @@ div.viewWorks {
 .resume .content h4 {
   font-size: 16px;
   color: var(--color-dark50);
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .resume .img-bg {
@@ -1325,10 +1356,6 @@ div.viewWorks {
   margin-bottom: 5px;
 }
 
-.resume .work-experiences-container {
-  margin-bottom: 60px;
-}
-
 .resume .work-experiences-container .work-experiences-item {
   float: left;
   width: 50%;
@@ -1361,6 +1388,8 @@ div.viewWorks {
 
 .resume .work-experiences-container ul li {
   margin-bottom: 2px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .resume .extracurricular-activities-container .extracurricular-activities-item {
@@ -1443,10 +1472,9 @@ div.viewWorks {
 # Footer Section
 --------------------------------------------------------------*/
 .footer {
-  color: var(--color-light);
+  color: var(--color-dark);
   background-size: cover;
   font-size: 14px;
-  padding-top: 80px;
   padding-bottom: 30px;
   position: relative;
 }
@@ -1455,6 +1483,12 @@ div.viewWorks {
   content: "";
   background: var(--color-dark);
   position: absolute;
+}
+
+.footer hr {
+  width: 50%;
+  margin: 0 auto;
+  height: 2px;
 }
 
 
@@ -1694,6 +1728,18 @@ div.viewWorks {
   display: none;
 }
 
+.mySlides .slideImg50PercentCenter {
+  width:50%;
+  margin: 0 auto;
+  display: block;
+}
+
+.mySlides .slideImg80PercentCenter {
+  width:80%;
+  margin: 0 auto;
+  display: block;
+}
+
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
@@ -1718,7 +1764,7 @@ div.viewWorks {
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: var(--color-dark);
   color: var(--color-light);
 }
 
@@ -1748,14 +1794,14 @@ div.viewWorks {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: var(--color-darkgrey);
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .dot-active, .dot:hover {
-  background-color: #717171;
+  background-color: var(--color-dark);
 }
 
 
