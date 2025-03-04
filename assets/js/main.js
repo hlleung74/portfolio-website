@@ -355,3 +355,4 @@ $(".hero-header").resizeText();
 
 
 });
+
