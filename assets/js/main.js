@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (header.classList.contains('inside-folder'))
           document.getElementById("logoImg").src="../assets/img/logos/logo-dark_without-bg.png";
         else
-          document.getElementById("logoImg").src="assets/img/logos/logo-dark_without-bg.png";
+          document.getElementById("logoImg").src="../assets/img/logos/logo-dark_without-bg.png";
         
       } else {
         header.classList.remove("nav-scrolled");
@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (header.classList.contains('inside-folder'))
           document.getElementById("logoImg").src="../assets/img/logos/logo-light_without-bg.png";
         else
-          document.getElementById("logoImg").src="assets/img/logos/logo-light_without-bg.png";
+          document.getElementById("logoImg").src="../assets/img/logos/logo-light_without-bg.png";
       }
     });
   },

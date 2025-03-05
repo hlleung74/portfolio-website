@@ -841,6 +841,38 @@ section {
     background: rgba(0, 0, 0, 0.6);
     z-index: 9996;
   }
+
+  .works {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .work-experiences-container, .achievement-container, .qualification-container, .skills-container {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  
+  .work-details {
+    margin: 20px;
+  }
+
+  .work-details-container {
+    margin-bottom: 20px;
+  }
+
+  .other-works {
+    margin: 20px;
+  }
+
+
+}
+
+@media (max-width: 770px) {
+  .work-description .forty-size-img {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1487,20 +1519,6 @@ div.viewWorks {
   margin-top: 60px;
 }
 
-.resume .achievement-container .achievement-item-left {
-  float: left;
-  width: 50%;
-  padding-left: 10px;
-  padding-right: 40px;
-}
-
-.resume .achievement-container .achievement-item-right {
-  float: left;
-  width: 50%;
-  padding-left: 40px;
-  padding-right: 10px;
-}
-
 .resume .achievement-container .achievement-row {
   width: 100%;
   padding: 0px;
@@ -1535,20 +1553,6 @@ div.viewWorks {
 
 .resume .qualification-container {
   margin-top: 60px;
-}
-
-.resume .qualification-container .qualification-item-left {
-  float: left;
-  width: 50%;
-  padding-left: 10px;
-  padding-right: 40px;
-}
-
-.resume .qualification-container .qualification-item-right {
-  float: left;
-  width: 50%;
-  padding-left: 40px;
-  padding-right: 10px;
 }
 
 .resume .qualification-container .qualification-row {
@@ -1606,20 +1610,6 @@ div.viewWorks {
 
 .resume .work-experiences-container {
   margin-top: 80px;
-}
-
-.resume .work-experiences-container .work-experiences-item-left {
-  float: left;
-  width: 50%;
-  padding-left: 10px;
-  padding-right: 40px;
-}
-
-.resume .work-experiences-container .work-experiences-item-right {
-  float: left;
-  width: 50%;
-  padding-left: 40px;
-  padding-right: 10px;
 }
 
 .resume .work-experiences-container .work-experiences-row {
@@ -1692,9 +1682,6 @@ div.viewWorks {
     float: none;
     margin: 0 auto;
   }
-  .resume .education-container {
-    padding: 0 10px;
-  }
 }
 
 
@@ -1703,7 +1690,7 @@ div.viewWorks {
     padding: 0 40px;
   }
   .resume .education-container {
-    padding: 0 40px;
+    padding: 0 30px;
   }
 }
 
