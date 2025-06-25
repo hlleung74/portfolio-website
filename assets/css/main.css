@@ -327,12 +327,16 @@ section {
   padding-bottom: 5px;
 }
 
-.data-structure-table {
+.work-description .table-of-contents {
+  font-weight: bold;
+}
+
+.data-structure-table, .hypothese-table {
   overflow: auto;
   width: 100%;
 }
 
-.data-structure-table table {
+.data-structure-table table, .hypothese-table table {
   border: 1px solid #dededf;
   height: 100%;
   width: 100%;
@@ -342,21 +346,27 @@ section {
   text-align: left;
 }
 
-.data-structure-table caption {
+.data-structure-table caption, .hypothese-table caption {
   caption-side: top;
   text-align: left;
 }
 
-.data-structure-table th {
+.data-structure-table th, .hypothese-table th {
   border: 1px solid #dededf;
   background-color: #eceff1;
   padding: 5px;
 }
 
-.data-structure-table td {
+.data-structure-table td, .hypothese-table td {
   border: 1px solid #dededf;
   padding: 5px;
 }
+
+.hypothese-table ul {
+  margin-bottom: 0;
+}
+
+
 
 .work-description .view-PDF-btn {
   color: var(--color-highlight);

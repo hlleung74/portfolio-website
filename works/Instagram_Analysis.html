@@ -65,7 +65,7 @@
       <div class="container">
 
         <div class="section-header">
-          <h3>Instagram User Analytics Dashboard</h3>
+          <h3>Instagram Growth Analysis for Comedy Niche Account</h3>
         </div>
 
 
@@ -87,10 +87,10 @@
                 <span><strong>Types</strong></span>
               </div>
               <div class="col col-lg-4">
-                <span class="work-type">Data Automation</span>
-                <span class="work-type">Data Collection</span>
-                <span class="work-type">Data Cleaning</span>
+                <span class="work-type">Automated Data Collection</span>
+                <span class="work-type">Content Strategy Formulation</span>
                 <span class="work-type">Data Analysis</span>
+                <span class="work-type">Data Cleaning</span>
                 <span class="work-type">Data Visualisation</span>
               </div>
             </div>
@@ -100,7 +100,7 @@
                 <span><strong>Tools</strong></span>
               </div>
               <div class="col col-lg-4">
-                <span class="work-tool">Python (Pandas, Numpy)</span> <span class="work-tool">Tableau</span> <span class="work-tool">Instagram API</span>
+                <span class="work-tool">Python</span> <span class="work-tool">Tableau</span> <span class="work-tool">Instagram API</span> <span class="work-tool">Crontab</span>
               </div>
             </div>
 
@@ -109,7 +109,7 @@
                 <span><strong>Relevant Link</strong></span>
               </div>
               <div class="col col-lg-4">
-                <a target="_blank" href=""><span></span></a>
+                <a target="_blank" href="https://github.com/khlleung/instagram-analysis"><span>https://github.com/khlleung/instagram-analysis</span></a>
               </div>
             </div>
 
@@ -126,309 +126,196 @@
               <div class='tableauPlaceholder' id='viz1750002476955' style='position: relative'><noscript><a href='#'><img alt='Final Dashboard ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;In&#47;InstagramUserAnalyticsDashboard&#47;FinalDashboard&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='InstagramUserAnalyticsDashboard&#47;FinalDashboard' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;In&#47;InstagramUserAnalyticsDashboard&#47;FinalDashboard&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-GB' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1750002476955');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='1627px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
             </div>
             
-            <!-- <div class="table-of-contents col-lg-10">
+            <div class="table-of-contents col-lg-10">
               <h2>Table of Contents</h2>
               <ol>
                 <li><a href="#project-background">Project Background</a></li>
-                <li><a href="#data-structure">Data Structure and Preparation</a></li>
-                <li><a href="#executive-summary">Executive Summary</a></li>
-                <li><a href="#insights">Insights Deep-Dive</a></li>
-                <li><a href="#recommendations">Recommendations</a></li>
-                <li><a href="#technical-methodology">Technical Methodology</a></li>
+                <li><a href="#executive-summary">Executive Summary (Updated: 15 Jun 2025)</a></li>
+                <li><a href="#hypotheses">Proposed Hypotheses</a></li>
+                <li><a href="#content-strategies">Content Strategies  (Mid-Jun to Mid-Sep 2025)</a></li>
                 <li><a href="#caveats-and-assumptions">Caveats and Assumptions</a></li>
               </ol>
-            </div> -->
+            </div>
             
             <div class="work-documentation col-lg-10">
-
               <span class="anchor" id="project-background"></span>
               <div>
-                <!-- <h2>1. Project Background</h2> -->
-                <h2>Project Background</h2>
+                <h2>1. Project Background</h2>
+                <h4>Objective</h4>
                 <p>
+<<<<<<< HEAD
                   In late April, I started a new Instagram account (<a href="https://www.instagram.com/seethis_youfunny/" target="_blank">@seethis_youfunny</a>) that targets Chinese-speaking comedy fans and comedians. I sought data-driven insights to drive better account engagement and the impact of my personal brand.
                 </p>
                 <p>
                   This project consists of four parts:
+=======
+                  Sought data-driven insights to optimise engagement and personal branding for a new comedy-focused Instagram account (<a href="https://www.instagram.com/seethis_youfunny/" target="_blank">@seethis_youfunny</a>) targeting Sinophone (Chinese-speaking) comedy fans and comedians.
+>>>>>>> dev
                 </p>
+                <h4>Project Workflow</h4>
                 <ol>
                   <li>
-                    <span class="highlight-span">Daily Data Collection (starting at 18 followers)</span>
-                    <br>
-                    Using Instagram API and Python, I pull and save my account’s information (e.g., follower count) and metrics (e.g., number of likes for each post) to my computer. Then I automated the daily data collection process with crontab.
+                    <span class="highlight-span">Automated Data Collection (Python, Instagram API)</span>
+                    <ul>
+                      <li>Daily account metrics (follower growth, post engagement) are extracted via cron-scheduled scripts.</li>
+                      <li>Scope: Starting at 18 followers in late May 2025.</li>
+                    </ul>
                   </li>
                   <li>
-                    <span class="highlight-span">Data Cleaning & Exploration</span>
-                    <br>
-                    The dataset underwent rigorous quality control checks using Python (Pandas), including formatting data and handling missing data. Afterwards, I explored my dataset to identify patterns and gain insights.
+                    <span class="highlight-span">Data Cleaning and Exploration (Python－ Pandas, NumPy) <a href="https://github.com/khlleung/instagram-analysis/tree/main/python" target="_blank">[code]</a></span>
+                    <ul>
+                      <li>Addressed missing data via linear interpolation.</li>
+                      <li>Standardised timezones (HKT) and created derived fields (e.g., <code>daily_net_followers</code>).</li>
+                      <li>
+                        Entity Relationship Diagram of the cleaned dataset:
+                        <div class="img-container">
+                          <img src="../assets/img/works/Instagram_Analysis/entity_relationship_diagram.png" class="full-size-img">
+                        </div>
+                      </li>
+                    </ul>
                   </li>
                   <li>
-                    <span class="highlight-span">Data Visualisation</span>
-                    <br>
-                    I built a <a href="https://public.tableau.com/views/InstagramUserAnalyticsDashboard/FinalDashboard?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank">Tableau dashboard</a> tracking my account growth trends and content performance, including high-performing content types and metric spikes (reach, engagement, etc.).
+                    <span class="highlight-span">Visualisation & Dashboard Building (Tableau) <a href="https://public.tableau.com/views/InstagramUserAnalyticsDashboard/FinalDashboard?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank">[dashboard]</a></span>
+                    <ul>
+                      <li>Tracked growth trends, content performance, and metric spikes (reach, engagement).</li>
+                      <li>Identified high-impact content types.</li>
+                    </ul>  
                   </li> 
                   <li>
-                    <span class="highlight-span">Content Strategy Planning</span>
-                    <br>
-                    I devised 3-month data-driven content strategies based on dashboard insights, optimising content creation and distribution decisions.
-                  </li>         
+                    <span class="highlight-span">Content Strategy Formulation</span>
+                    <ul>
+                      <li>Developed a 3-month data-driven content strategy (mid-Jun to Sep 2025) to optimise content creation.</li>
+                    </ul>  
+                  </li>
                 </ol>
-              </div>
-
-              <!-- <span class="anchor" id="data-structure"></span>
-              <div>
-                <h2>2. Data Structure and Preparation</h2>
-                <p>
-                  The dataset, sourced from <a href="https://www.kaggle.com/datasets/matthieugimbert/french-bakery-daily-sales/data" target="_blank">Kaggle</a> consists of a single table, <code>transaction_records</code>, containing <span class="highlight-span">233,973 transaction records</span>. Below is a breakdown of the table structure:
-                </p>
-                <div class="data-structure-table" role="region" tabindex="0">
-                  <table>
-                    <thead>
-                      <tr>
-                        <th>Column Name</th>
-                        <th>Data Type</th>
-                        <th>Description</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td><code>transaction_date</code></td>
-                        <td>DATE</td>
-                        <td>The date of the transaction.</td>
-                      </tr>
-                      <tr>
-                        <td><code>transaction_year</code></td>
-                        <td>INTEGER</td>
-                        <td>The year of the transaction.</td>
-                      </tr>
-                      <tr>
-                        <td><code>transaction_month</code></td>
-                        <td>INTEGER</td>
-                        <td>The month of the transaction.</td>
-                      </tr>
-                      <tr>
-                        <td><code>transaction_day</code></td>
-                        <td>INTEGER</td>
-                        <td>The day of the transaction.</td>
-                      </tr>
-                      <tr>
-                        <td><code>transaction_weekday</code></td>
-                        <td>STRING</td>
-                        <td>The weekday of the transaction.</td>
-                      </tr>
-                      <tr>
-                        <td><code>transaction_time</code></td>
-                        <td>TIME</td>
-                        <td>The time of the transaction.</td>
-                      </tr>
-                      <tr>
-                        <td><code>ticket_number</code></td>
-                        <td>INTEGER</td>
-                        <td>A unique identifier for each order.</td>
-                      </tr>
-                      <tr>
-                        <td><code>item_name</code></td>
-                        <td>STRING</td>
-                        <td>The name of the product sold.</td>
-                      </tr>
-                      <tr>
-                        <td><code>item_type</code></td>
-                        <td>STRING</td>
-                        <td>The type of the product sold.</td>
-                      </tr>
-                      <tr>
-                        <td><code>quantity</code></td>
-                        <td>INTEGER</td>
-                        <td>The number of items sold.</td>
-                      </tr>
-                      <tr>
-                        <td><code>unit_price</code></td>
-                        <td>FLOAT</td>
-                        <td>The price of a single item.</td>
-                      </tr>
-                      <tr>
-                        <td><code>total_price</code></td>
-                        <td>FLOAT</td>
-                        <td>The total price of the transaction.</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-
-                <br>
-                <p>
-                  Before analysis, the dataset underwent rigorous quality control checks using <span class="highlight-span">SQL (BigQuery)</span>. Key steps included: 
-                </p>
-                <ul>
-                  <li><span class="highlight-span">Removing Duplicates:</span> 0.5% of the dataset was identified as duplicates and removed.</li>
-                  <li><span class="highlight-span">Handling Missing Data:</span> 5 records with missing `item_name` and `unit_price` were excluded.</li>
-                  <li><span class="highlight-span">Formatting Data:</span> Columns were renamed for clarity, and data types were standardised (e.g., converting `transaction_time` to a time format).</li> 
-                  <li><span class="highlight-span">Creating Derived Columns:</span> New fields, such as `item_type` and `total_price`, were created to facilitate analysis.</li>                  
-                </ul>
-                <p>
-                  The SQL queries used for data cleaning can be found <a href="https://github.com/khlleung/bakery-sales-analysis/blob/main/sql/data_preparation.sql" target="_blank">here</a>.
-                </p>
               </div>
 
               <span class="anchor" id="executive-summary"></span>
               <div>
-                <h2>3. Executive Summary</h2>
-                <p>
-                  Le Petit's sales analysis of <span class="highlight-span">233,973 records</span> across <span class="highlight-span">2021–2022</span> reveals the following key insights:  
-                </p>
+                <h2>2. Executive Summary (Updated: 15 Jun 2025)</h2>
+                <h4>Account Growth (18 → 169 Followers)</h4>
                 <ul>
-                  <li>Total sales reached <span class="highlight-span">$558K in revenue</span>, with <span class="highlight-span">136K orders</span> and <span class="highlight-span">359K product units</span> sold.</li>
-                  <li><span class="highlight-span">Summer months (July and August)</span> consistently generated the <span class="highlight-span">highest revenue</span>, with sales peaking at $54K in August 2022. </li>
-                  <li>Weekends accounted for 40% of total sales and 35% of average order volume, with <span class="highlight-span">Sundays</span> being the <span class="highlight-span">busiest day</span>.</li> 
-                  <li><span class="highlight-span">Wednesday</span> was the <span class="highlight-span">quietest day</span>, contributing only 9% of total sales and 10% of average order volume.</li>
-                  <li>The <span class="highlight-span">busiest hour</span> was <span class="highlight-span">11 a.m.</span> with an average of 48 orders in a week.</li>   
-                  <li>The <span class="highlight-span">top-selling product</span> was the <span class="highlight-span">Traditional Baguette</span>, accounting for 33% of the total sales volume.</li>   
-                  <li>More than <span class="highlight-span">30 underperforming products</span> contributed less than 0.1% of total sales volume. </li>         
-                </ul>
-                <p>
-                  Based on these findings, actionable recommendations have been provided to increase revenue, optimize operations, and improve customer satisfaction.
-                </p>
-                <p>
-                  The entire interactive Tableau dashboard can be accessed <a href="https://public.tableau.com/views/Book1_17384822343040/Dashboard5?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank">here</a>. 
-                </p>
-              </div>
-              
-              <span class="anchor" id="insights"></span>
-              <div>
-                <h2>4. Insights Deep Dive </h2>
-                <h4>4.1 Sales Trends</h4>
-                <p>
-                  <span class="highlight-span">Seasonal Sales Trends:</span> Sales peaked during the summer months, with July and August generating the highest revenue. In 2021, sales reached $42K in July and $49K in August. In 2022, sales peaked at $47K in July and $54K in August.
-                </p>
-                <p>
-                  <span class="highlight-span">Weekly Sales Trends:</span> Weekends accounted for 40% of total sales, with Sundays generating $126K and Saturdays generating $94K. Wednesdays performed the worst, contributing only 9% of total sales.
-                </p>
-                <br>
-                <div class="img-container">
-                  <a href="https://public.tableau.com/views/Book1_17384822343040/Dashboard5?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank">
-                    <img src="../assets/img/works/Bakery_Analysis/dashboard_sales.png" class="full-size-img">
-                  </a>
-                </div>
-
-                <br>
-                <h4>4.2 Order Trends</h4>
-                <p>
-                  <span class="highlight-span">Weekly Order Volume:</span> Sundays had the highest average order volume (43 orders/day), followed by Saturdays (36 orders/day). Wednesdays had the lowest average order volume (22 orders/day). 
-                </p>
-                <p>
-                  <span class="highlight-span">Daily Order Volume:</span> The busiest hour was 11 a.m., with an average of 48 orders per week. Order volume peaked in the morning (10 a.m. to 12 p.m.) and gradually declined in the afternoon.
-                </p>
-
-                <div class="img-container">
-                  <a href="https://public.tableau.com/views/Book1_17384822343040/Dashboard5?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank">
-                    <img src="../assets/img/works/Bakery_Analysis/dashboard_orders.png" class="fifty-size-img">
-                  </a>
-                </div>
-
-
-                <br>
-                <h4>4.3 Product Performance</h4>
-                <p>
-                  <span class="highlight-span">Top-Selling Products:</span> The Traditional Baguette accounted for 33% of total sales volume, followed by Croissant (8%) and Pain au Chocolat (7%).
-                </p>
-                <p>
-                  <span class="highlight-span">Frequently Purchased Together:</span> Among 26,808 orders that included at least 1 Traditional Baguette, 23% included Coupe (sliced bread), 18% included Croissant, and 16% included Pain au Chocolat.
-                </p>
-                <p>
-                  <span class="highlight-span">Underperforming Products:</span> Out of 128 product types, 33 of them combined contributed less than 0.1% of total sales volume.
-                </p>
-                <br>
-                <div class="img-container">
-                  <a href="https://public.tableau.com/views/Book1_17384822343040/Dashboard5?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank">
-                    <img src="../assets/img/works/Bakery_Analysis/dashboard_products.png" class="seventy-size-img">
-                  </a>
-                </div>
-              </div>
-              
-              <span class="anchor" id="recommendations"></span>
-              <div>
-                <h2>5. Recommendations</h2>
-                <p>
-                  Based on the uncovered insights, the following recommendations have been provided:
-                </p>
-
-                <h4>Leverage Seasonal Demand</h4>
-                <ul>
-                  <li><span class="highlight-span">Recommendation:</span> Introduce refreshing, heat-friendly items during the summer months to capitalize on peak demand.</li>
-                  <li><span class="highlight-span">Estimated Impact:</span> Increase summer sales revenue.</li>
-                </ul>
-                  
-                <h4>Optimise Product Mix</h4>
-                <ul>
-                  <li><span class="highlight-span">Recommendation:</span> Discontinue underperforming products to free up shelf space for high-demand items, including Traditional Baguette, Croissant and Pain au Chocolat.</li>
-                  <li><span class="highlight-span">Estimated Impact:</span> Drive high-demand items’ sales volume and reduce waste.</li>
-                </ul>
-
-                <h4>Streamline Inventory Management</h4>
-                <ul>
-                  <li><span class="highlight-span">Recommendation:</span> Adjust production and inventory levels to match demand on busy weekends and quiet weekdays (e.g., Wednesdays).</li>
-                  <li><span class="highlight-span">Estimated Impact:</span> Avoid stockouts during peak hours and reduce overstock. </li>
-                </ul>
-
-                <h4>Enhance Staffing Efficiency </h4>
-                <ul>
-                  <li><span class="highlight-span">Recommendation:</span> Schedule additional staff during peak hours (10 a.m. to 12 p.m.) and weekends to handle high customer volume efficiently. </li>
-                  <li><span class="highlight-span">Estimated Impact:</span> Improve customer satisfaction and reduce wait times.</li>
-                </ul>
-
-                <h4>Drive Traffic During Quiet Times</h4>
-                <ul>
-                  <li><span class="highlight-span">Recommendation:</span> Run promotions like “Add-On Deals” (e.g., “Add a Croissant for $1 with your Traditional Baguette purchase”) on low-performing weekdays (e.g., Wednesdays) or slower hours (e.g., 4 p.m. to 7 p.m.).</li>
-                  <li><span class="highlight-span">Estimated Impact:</span> Boost weekday/afternoon customer traffic and encourage customers to try complementary baked goods.</li>
-                </ul>
-              </div>
-
-
-              <span class="anchor" id="technical-methodology"></span>
-              <div>
-                <h2>6. Technical Methodology</h2>
-                <h4>Tools Used</h4>
-                <ul>
-                  <li>
-                    <span class="highlight-span">SQL (BigQuery) <a href="https://github.com/khlleung/bakery-sales-analysis/blob/main/sql/data_preparation.sql" target="_blank">[code]</a>: </span> For data cleaning, transformation, and preparation.
-                  </li>
-                  <li>
-                    <span class="highlight-span">Tableau <a href="https://public.tableau.com/views/Book1_17384822343040/Dashboard5?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank">[dashboard]</a>: </span> For data analysis, visualisation, and dashboard creation.
-                  </li>
-                </ul>
-
-                <h4>Data Analysis Process</h4>
-                <ul>
-                  <li><span class="highlight-span">Data Cleaning:</span> Removed duplicates, handled missing data, and standardised formats.</li>
-                  <li><span class="highlight-span">Feature Engineering:</span> Created derived columns (e.g., `item_type`, `total_price`) to enhance analysis.</li>
-                  <li><span class="highlight-span">Exploratory Data Analysis (EDA):</span> Identified trends, patterns, and anomalies in sales, orders, and product performance.</li>
-                  <li><span class="highlight-span">Visualisation:</span> Developed interactive dashboards and visualizations (e.g., bar charts and line graphs) to communicate insights effectively.</li>
+                  <li>Follower spikes correlate directly with viral Reels, e.g., my 12th content drove +57 net followers.</li>
+                  <li>Reach surges mostly occurred on the day or a day after high-performing content.</li>
                 </ul>
                 
-            </div>
+                <h4>Content Performance (16 Posts － 12 Carousels, 4 Reels)</h4>
+                <ul>
+                  <li>Reels outperform carousel posts regarding reach and engagement (likes, shares, saves). 4 out of 5 top content being Reels, and only the monthly event calendar carousel post cracked the top 5.</li>
+                  <li>Low comment rates across all content types.</li>
+                </ul>
+                
+                <div class="img-container">
+                  <img src="../assets/img/works/Instagram_Analysis/dashboard_20250615.png" class="full-size-img">
+                </div>
+              </div>
+              
+              <span class="anchor" id="hypotheses"></span>
+              <div>
+
+                <h2>3. Proposed Hypotheses </h2>
+                <div class="hypothese-table" role="region" tabindex="0">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Insight</th>
+                        <th>Proposed Hypotheses</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Reach ↔ Follower correlation</td>
+                        <td>
+                          <ul>
+                            <li>Reach drives follows.</li>
+                            <li>Follower growth incentivises further algorithmic distribution.</li>
+                          </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Weak performance of carousel posts</td>
+                        <td>
+                          <ul>
+                            <li>Unattractive covers.</li>
+                            <li>Text-heavy slides.</li>
+                            <li>Lack of comedic credibility.</li>
+                          </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Low comments</td>
+                        <td>
+                          <ul>
+                            <li>Weak CTAs.</li>
+                            <li>Users scrolling away before seeing the engagement prompts (e.g., end-of-carousel CTAs).</li>
+                          </ul>
+                        </td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+              </div>
+              
+              <span class="anchor" id="content-strategies"></span>
+              <div>
+                <h2>4. Content Strategies (Mid-Jun to Mid-Sep 2025)</h2>
+
+                <h4>Immediate Actions (Jun 2025)</h4>
+                <ul>
+                  <li>
+                    <span class="highlight-span">Revamp Carousel Post</span>
+                    <ul>
+                      <li>Reduce text by 50%.</li>
+                      <li>Use visually compelling covers.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="highlight-span">Build connections with my followers using a VTuber avatar</span>
+                    <ul>
+                      <li>Build a stick figure VTuber model with GIMP and Live2D.</li>
+                      <li>Create debut Reels to launch my model.</li>
+                      <li>Include image stills of the avatar in my content.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="highlight-span">Establish credibility in comedy by posting original jokes</span>
+                    <ul>
+                      <li>Create a secondary account with the same branding as my main account, except it is about making funny memes.</li>
+                      <li>Feature my avatar as the main character of the memes.</li>
+                    </ul>
+                  </li>
+                </ul>
+
+                <h4>Long-Term Strategy (Jul to Sep 2025)</h4>
+                <ul>
+                  <li>
+                    <span class="highlight-span">Content Tests</span>
+                    <ul>
+                      <li><span class="highlight-span">Reels:</span> Talking-head videos answering comedy questions using the VTuber model, similar to Pikat’s and Rin Penrose’s YouTube Shorts styles.</li>
+                      <li><span class="highlight-span">Carousel Posts:</span> Informative content that incentivises saves and shares, such as comedy troupe spotlights and open mic guides.</li>
+                    </ul>
+                  </li>
+                </ul>
+                
+              </div>
+
               
 
             <span class="anchor" id="caveats-and-assumptions"></span>
               <div>
-                <h2>7. Caveats and Assumptions </h2>
+                <h2>5. Caveats and Assumptions </h2>
                 <ul>
                   <li>
-                    <span class="highlight-span">Incomplete Data:</span> The dataset excludes sales data for October to December 2022, which limits the comprehensiveness of the trend analysis.
+                    <span class="highlight-span">Incomplete Data:</span>
+                    Missing data from the launch period (28 April to 24 May 2025). Also, the Instagram API fails to collect separate data regarding each Instagram Story.
                   </li>
                   <li>
-                    <span class="highlight-span">Missing Product Costs:</span> Profitability metrics could not be calculated due to the lack of cost data.
-                  </li>
-                  <li>
-                    <span class="highlight-span">Assumed Operating Hours:</span> Based on order volume, it is assumed that Le Petit operates from **7 a.m. to 7 p.m.**, with a lunch break between **2 p.m. and 3 p.m**.
-                  </li>
-                  <li>
-                    <span class="highlight-span">No Promotions:</span> No promotions or discounts were applied during the analysis period.
-                  </li>
-                  <li>
-                    <span class="highlight-span">Returned Orders:</span> Approximately **0.5% of transactions** have negative quantity values, indicating returned orders. These were included in the analysis as their impact was minimal.
+                    <span class="highlight-span">Varied Data Collection Time: </span> 
+                    Crontab fails occasionally, so I sometimes run the Python code manually after the scheduled time.
                   </li>
                 </ul>
-              </div> -->
+              </div>
 
           </div>
         </div>
