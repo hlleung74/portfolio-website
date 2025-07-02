@@ -51,6 +51,12 @@ h6 {
   font-family: var(--font-primary);
 }
 
+.highlight-span {
+  font-style: italic;
+  font-weight: bold;
+  font-size:105%;
+}
+
 /*--------------------------------------------------------------
 # Sections & Section Header
 --------------------------------------------------------------*/
@@ -302,12 +308,6 @@ section {
 .work-description .img-description {
   text-align: center;
   font-style: italic;
-}
-
-.work-description .highlight-span {
-  font-style: italic;
-  font-weight: bold;
-  font-size:105%;
 }
 
 .work-description code {
